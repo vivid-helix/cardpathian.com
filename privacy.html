@@ -34,23 +34,27 @@ an off switch in the pause menu.</p>
 <h2>What playtest builds send</h2>
 <p>Playtest builds send anonymous gameplay events:</p>
 <ul>
-  <li>Progress milestones — research and operations completed, regions and biomes found,
-      cards and traits discovered, recipes performed for the first time, quest recipes
-      completed.</li>
+  <li>Progress milestones — research and operations completed, regions researched,
+      regions and biomes found, cards and traits discovered, recipes performed for the
+      first time, quest recipes completed.</li>
   <li>Session start, session end, and session length.</li>
-  <li>A periodic summary including the rough number of cards you had in play at once.</li>
-  <li>Game version, operating system family, and GPU vendor.</li>
+  <li>A periodic summary of production: how many of each card type you made in the
+      period, and the highest number of cards you had in play at once.</li>
+  <li>Game version, operating system family, GPU vendor, and whether the game ran in the
+      Unity editor or as a normal build.</li>
   <li>A random session identifier, generated fresh each time the game starts and linked
       to nothing — not to you, your hardware, or your other play sessions.</li>
 </ul>
 
 <h2>What we never collect</h2>
 <p>No name, no email, no location, no account, no chat, no personal information of any
-kind. Nothing identifying is ever stored on your machine. Your IP address is used only
-to deliver the data and is discarded at ingestion — it is not stored, and no location
-data is derived from it. Because sessions carry no shared identifier, events cannot be
-linked to you or connected across play sessions. We never sell or share the data with
-anyone.</p>
+kind. Nothing that identifies you is ever stored on your machine — the only telemetry
+files kept locally are your on/off choice and a queue of events waiting to be sent, which
+hold nothing beyond the random session identifier and the data described above. Your IP
+address is used only to deliver the data and is discarded at ingestion — it is not
+stored, and no location data is derived from it. Because sessions carry no shared
+identifier, events cannot be linked to you or connected across play sessions. We never
+sell or share the data with anyone.</p>
 
 <h2>Why we collect it</h2>
 <p>One purpose: improving the game during playtesting — seeing where players get stuck,
